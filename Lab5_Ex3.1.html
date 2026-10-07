@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Khám phá lợi ích của công nghệ số trong học tập qua infographic và video minh họa.">
-  <title>Infographic và video YouTube</title>
+  <meta name="description" content="Thông tin cá nhân và ba sản phẩm học tập: tài liệu PDF, infographic PNG và video YouTube.">
+  <title>Thông tin cá nhân và sản phẩm học tập</title>
   <style>
     :root {
       color-scheme: light;
@@ -64,6 +64,43 @@
       color: #526078;
     }
 
+    .personal-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+      gap: 0.75rem 1.5rem;
+      margin: 1rem 0 0;
+    }
+
+    .personal-info div {
+      padding: 0.75rem 1rem;
+      border-radius: 0.65rem;
+      background: #f3f6fb;
+    }
+
+    .personal-info dt {
+      color: #526078;
+      font-size: 0.9rem;
+    }
+
+    .personal-info dd {
+      margin: 0.15rem 0 0;
+      font-weight: 600;
+    }
+
+    .product-link {
+      display: inline-block;
+      padding: 0.7rem 1rem;
+      border-radius: 0.55rem;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      background: #2877a8;
+    }
+
+    .product-link:hover {
+      background: #173b72;
+    }
+
     .infographic {
       display: block;
       width: 100%;
@@ -102,23 +139,49 @@
 </head>
 <body>
   <header class="page-header">
-    <h1>Infographic và video YouTube</h1>
-    <p>Infographic về lợi ích của công nghệ số trong học tập và video YouTube được nhúng để phát trực tiếp trên trang.</p>
+    <h1>Thông tin cá nhân và sản phẩm học tập</h1>
+    <p>Ba sản phẩm gồm tài liệu PDF, infographic PNG và video YouTube.</p>
   </header>
 
   <main>
+    <section aria-labelledby="personal-info-title">
+      <h2 id="personal-info-title">Thông tin cá nhân</h2>
+      <dl class="personal-info">
+        <div>
+          <dt>Họ tên</dt>
+          <dd>Dương Quốc Thịnh</dd>
+        </div>
+        <div>
+          <dt>MSSV</dt>
+          <dd>B0382556047</dd>
+        </div>
+        <div>
+          <dt>Lớp</dt>
+          <dd>CT005D06</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section aria-labelledby="pdf-title">
+      <h2 id="pdf-title">Sản phẩm 1: Tài liệu PDF</h2>
+      <p class="section-description">Mở hoặc tải tài liệu PDF của bài tập.</p>
+      <a class="product-link" href="Lab05_Ex1.pdf" target="_blank" rel="noopener">
+        Xem tài liệu PDF
+      </a>
+    </section>
+
     <section aria-labelledby="infographic-title">
-      <h2 id="infographic-title">Infographic</h2>
+      <h2 id="infographic-title">Sản phẩm 2: Infographic PNG</h2>
       <p class="section-description">Infographic tóm tắt những lợi ích của công nghệ số và AI trong học tập, từ tìm kiếm kiến thức đến kết nối và cộng tác.</p>
       <img
         class="infographic"
-        src="infographic.png"
+        src="Lab05_Ex2.1.png"
         alt="Infographic về lợi ích của công nghệ số trong học tập"
       >
     </section>
 
     <section aria-labelledby="video-title">
-      <h2 id="video-title">Video minh họa</h2>
+      <h2 id="video-title">Sản phẩm 3: Video YouTube</h2>
       <p class="section-description">Video “YouTube Developers Live: Embedded Web Player Customization” phát ngay trong trang.</p>
       <div class="video-frame">
         <iframe
