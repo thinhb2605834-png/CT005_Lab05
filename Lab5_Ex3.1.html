@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khám phá lợi ích của công nghệ số trong học tập qua infographic và video minh họa.">
+  <title>Infographic và video YouTube</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #172033;
+      background: #f3f6fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .page-header {
+      padding: 3rem 1.25rem 2.5rem;
+      color: #fff;
+      text-align: center;
+      background: linear-gradient(135deg, #173b72, #2877a8);
+    }
+
+    .page-header h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    .page-header p {
+      max-width: 42rem;
+      margin: 0 auto;
+      color: #e1efff;
+    }
+
+    main {
+      width: min(100% - 2rem, 56rem);
+      margin: 2rem auto;
+    }
+
+    section {
+      margin-bottom: 1.5rem;
+      padding: clamp(1.25rem, 4vw, 2rem);
+      border: 1px solid #e2e8f0;
+      border-radius: 1rem;
+      background: #fff;
+      box-shadow: 0 0.5rem 1.5rem rgb(23 32 51 / 6%);
+    }
+
+    h2 {
+      margin: 0 0 0.4rem;
+      color: #173b72;
+    }
+
+    .section-description {
+      margin: 0 0 1.25rem;
+      color: #526078;
+    }
+
+    .infographic {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 0.65rem;
+    }
+
+    .video-frame {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 0.65rem;
+      background: #101827;
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    footer {
+      padding: 1.5rem 1rem;
+      color: #d8e3f3;
+      text-align: center;
+      background: #172033;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <h1>Infographic và video YouTube</h1>
+    <p>Infographic về lợi ích của công nghệ số trong học tập và video YouTube được nhúng để phát trực tiếp trên trang.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="infographic-title">
+      <h2 id="infographic-title">Infographic</h2>
+      <p class="section-description">Infographic tóm tắt những lợi ích của công nghệ số và AI trong học tập, từ tìm kiếm kiến thức đến kết nối và cộng tác.</p>
+      <img
+        class="infographic"
+        src="infographic.png"
+        alt="Infographic về lợi ích của công nghệ số trong học tập"
+      >
+    </section>
+
+    <section aria-labelledby="video-title">
+      <h2 id="video-title">Video minh họa</h2>
+      <p class="section-description">Video “YouTube Developers Live: Embedded Web Player Customization” phát ngay trong trang.</p>
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/M7lc1UVf-VE?rel=0"
+          title="YouTube Developers Live: Embedded Web Player Customization"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Infographic. Một phần nội dung được hỗ trợ bởi AI.</p>
+  </footer>
+</body>
+</html>
